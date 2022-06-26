@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica neue", sans-serif;
+}
+
+#contenier{
+    display: grid;
+    background: linear-gradient( #686a6c, #f1a23d);/*dessa forma pode deixa a tela com duas cor*/
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;/*só vai funcionar direito de tiver o display:grid;*/
+    align-content: center;/*só vai funcionar direito de tiver o display:grid;*/
+}
+
+.cauculadora{
+    display:grid;
+    height: 480px;
+    width: 320px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*esse e o de baixo é a mesma coisa*/
+    grid-template-rows: repeat(6, 1fr);/*dessa forma multiplica a fração, tipo 6 vezes*/
+}
+
+.display{
+    grid-column: 1 / 5;/*esse se regere a ao grid-template-columns 
+    e significa da primeira até a quinta linha imaginaria de cada coluna*/
+    background-color:#5C5856;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border:none;
+    opacity: 0.8;
+}
+
+.item{
+    cursor:pointer;
+    color: #ffffff;
+    outline: none;/*significa não deixa uma bordar ao do botão ou input redor */
+    font-size:20px;
+}
+
+.item:hover{
+    opacity: 0.8;
+}
+
+.item:active{/*significa que ira execulta tudo que estiver aqui quando for selecionado */
+    background-color:#ffffff ;
+    opacity:0.4;
+    color:#000000;
+    border: 0.2 solid #000000;/*primeiro é a grossura da borda, 
+    segundo é a forma da borda e a terceira é a cor da borda*/
+}
+
+.zero{
+    grid-column: 1 / 3;/*esse se regere a ao grid-template-columns 
+    e significa da primeira até a terceira linha imaginaria de cada coluna*/
+}
+
+.tecla-operacional-direita{
+    background-color:#f1a23d;
+    
+}
+
+.tecla-operacional{
+    background-color:#5a5669
+}
+
+.botao-numero{
+    background-color: #75757d;
+}
+
+
+
+
+
+
+
