@@ -14,7 +14,7 @@
     align-content: center;/*só vai funcionar direito de tiver o display:grid;*/
 }
 
-.cauculadora{
+.calculadora{
     display:grid;
     height: 480px;
     width: 320px;
